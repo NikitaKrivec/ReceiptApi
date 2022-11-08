@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiptApi", "ReceiptApi\ReceiptApi.csproj", "{EB5827B9-D385-4136-873F-E7733D88AC5C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0421B807-9924-4B60-8AFC-76275999FB6C} = {0421B807-9924-4B60-8AFC-76275999FB6C}
+		{27B55E66-7915-4761-A0A4-360075A7996B} = {27B55E66-7915-4761-A0A4-360075A7996B}
+		{8B3B0509-5561-48D8-B9F1-2426121745A1} = {8B3B0509-5561-48D8-B9F1-2426121745A1}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiptApi.Data", "ReceiptApi.Data\ReceiptApi.Data.csproj", "{0421B807-9924-4B60-8AFC-76275999FB6C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27B55E66-7915-4761-A0A4-360075A7996B} = {27B55E66-7915-4761-A0A4-360075A7996B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiptApi.Service", "ReceiptApi.Service\ReceiptApi.Service.csproj", "{8B3B0509-5561-48D8-B9F1-2426121745A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0421B807-9924-4B60-8AFC-76275999FB6C} = {0421B807-9924-4B60-8AFC-76275999FB6C}
+		{27B55E66-7915-4761-A0A4-360075A7996B} = {27B55E66-7915-4761-A0A4-360075A7996B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiptApi.Core", "ReceiptApi.Core\ReceiptApi.Core.csproj", "{27B55E66-7915-4761-A0A4-360075A7996B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiReceiptServiceTest", "ApiReceiptServiceTest\ApiReceiptServiceTest.csproj", "{7625DDBC-2EA6-4349-B50C-493DB005EDAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5827B9-D385-4136-873F-E7733D88AC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5827B9-D385-4136-873F-E7733D88AC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5827B9-D385-4136-873F-E7733D88AC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5827B9-D385-4136-873F-E7733D88AC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0421B807-9924-4B60-8AFC-76275999FB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0421B807-9924-4B60-8AFC-76275999FB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0421B807-9924-4B60-8AFC-76275999FB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0421B807-9924-4B60-8AFC-76275999FB6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3B0509-5561-48D8-B9F1-2426121745A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3B0509-5561-48D8-B9F1-2426121745A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3B0509-5561-48D8-B9F1-2426121745A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3B0509-5561-48D8-B9F1-2426121745A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B55E66-7915-4761-A0A4-360075A7996B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B55E66-7915-4761-A0A4-360075A7996B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B55E66-7915-4761-A0A4-360075A7996B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B55E66-7915-4761-A0A4-360075A7996B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7625DDBC-2EA6-4349-B50C-493DB005EDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7625DDBC-2EA6-4349-B50C-493DB005EDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7625DDBC-2EA6-4349-B50C-493DB005EDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7625DDBC-2EA6-4349-B50C-493DB005EDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F27C4D2-6FFB-497E-B80F-16F152528BDB}
+	EndGlobalSection
+EndGlobal
