@@ -1,4 +1,4 @@
-# ReceiptApiT
+# ReceiptApi
 Description!
 For Receipt controller:
 
