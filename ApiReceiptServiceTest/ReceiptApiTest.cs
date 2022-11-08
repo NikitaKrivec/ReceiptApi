@@ -161,7 +161,6 @@ namespace ApiReceiptServiceTest
             //Assert
             Assert.IsType<Receipt>(actionResult.Value);
             Assert.Equal(_receipt.Id, (actionResult.Value as Receipt).Id);
-            //Assert.Equal(actionResult.Value, _receipt.Id);
         }
 
         [Fact]

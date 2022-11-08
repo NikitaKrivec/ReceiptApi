@@ -13,11 +13,11 @@ namespace ReceiptApi.Controllers
         private readonly IReceiptService _receiptService;
         private readonly IReceiptValidator _receiptValidator;
         private readonly IItemValidator _itemValidator;
-        public ReceiptController(IReceiptService receiptService, IReceiptValidator receiptValidator /*, IItemValidator itemValidator*/)
+
+        public ReceiptController(IReceiptService receiptService, IReceiptValidator receiptValidator)
         {
             _receiptService = receiptService;
             _receiptValidator = receiptValidator;
-            //_itemValidator = itemValidator;
         }
 
         [Route("receipts")]
@@ -69,7 +69,7 @@ namespace ReceiptApi.Controllers
             {
                 return BadRequest("This Id does not exist.");
             }
-            if (!_receiptService.IsReceiptExistsById(id))
+            if (!_receiptService.ReceiptIdExists(id))
             {
                 return NotFound();
             }
@@ -101,12 +101,7 @@ namespace ReceiptApi.Controllers
         [Route("get-receipts-by-product-name")]
         public IActionResult GetReceiptsByProductName(string name)
         {
-            //if (!_itemValidator.IsValid(name))
-            //{
-            //    BadRequest();
-            //}
-
-            if (!_receiptService.IsProductNameExists(name))
+            if (!_receiptService.ProductNameExists(name))
             {
                 return NotFound("This product does not exist.");
             }

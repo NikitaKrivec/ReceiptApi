@@ -11,8 +11,8 @@ namespace ReceiptApi.Service
         List<Receipt> GetReceipts();
         List<Receipt> GetReceiptsByCreationDate(DateTime from, DateTime to);
         List<Receipt> GetReceiptsByItemProductName(string name);
-        bool IsProductNameExists(string name);
-        bool IsReceiptExistsById(int id);
+        bool ProductNameExists(string name);
+        bool ReceiptIdExists(int id);
         bool IsTimeValid(DateTime time);
     }
 }
