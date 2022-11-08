@@ -109,7 +109,7 @@ namespace ApiReceiptServiceTest
         public void ReceiptApiTest_GetReceiptsByCreationDate_ReturnsOkObjectResult()
         {
             // Arrange
-            var startT = new DateTime(2020, 1, 1);
+            var startT = new DateTime(2022, 11, 1);
             var endT = new DateTime(2022, 11, 10);
 
             // Act
