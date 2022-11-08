@@ -9,7 +9,6 @@ namespace ApiReceiptServiceTest
 {
     public class ReceiptApiTest
     {
-
         private Mock<IReceiptService> _receiptService;
         private Mock<IReceiptValidator> _receiptValidator;
         private ReceiptController _controller;
