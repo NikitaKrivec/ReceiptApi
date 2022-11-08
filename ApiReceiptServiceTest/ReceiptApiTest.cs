@@ -9,7 +9,6 @@ namespace ApiReceiptServiceTest
 {
     public class ReceiptApiTest
     {
-
         private Mock<IReceiptService> _receiptService;
         private Mock<IReceiptValidator> _receiptValidator;
         private ReceiptController _controller;
@@ -110,7 +109,7 @@ namespace ApiReceiptServiceTest
         public void ReceiptApiTest_GetReceiptsByCreationDate_ReturnsOkObjectResult()
         {
             // Arrange
-            var startT = new DateTime(2020, 1, 1);
+            var startT = new DateTime(2022, 11, 1);
             var endT = new DateTime(2022, 11, 10);
 
             // Act
@@ -162,7 +161,6 @@ namespace ApiReceiptServiceTest
             //Assert
             Assert.IsType<Receipt>(actionResult.Value);
             Assert.Equal(_receipt.Id, (actionResult.Value as Receipt).Id);
-            //Assert.Equal(actionResult.Value, _receipt.Id);
         }
 
         [Fact]

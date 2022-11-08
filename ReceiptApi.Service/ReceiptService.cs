@@ -41,7 +41,7 @@ namespace ReceiptApi.Service
 
         public Receipt DeleteReceiptById(int id)
         {
-            var receipt = _context.Receipts.Include(f => f.ReceiptItems).FirstOrDefault(x => x.Id == id);
+            var receipt = GetReceiptById(id);
             _context.Receipts.Remove(receipt);
             _context.SaveChanges();
 
@@ -58,7 +58,7 @@ namespace ReceiptApi.Service
                 Where(n => n.ReceiptItems.Any(p => p.ProductName == name)).ToList();
         }
 
-        public bool IsReceiptExistsById(int id)
+        public bool ReceiptIdExists(int id)
         {
             return _context.Receipts.Any(x => x.Id == id);
         }
@@ -68,7 +68,7 @@ namespace ReceiptApi.Service
             return !string.IsNullOrEmpty(time.ToString());
         }
 
-        public bool IsProductNameExists(string name)
+        public bool ProductNameExists(string name)
         {
             return _context.Items.Any(x => x.ProductName == name);
         }
